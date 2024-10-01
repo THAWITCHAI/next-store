@@ -5,11 +5,20 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
 import GlobalApi from '@/app/_utils/GlobalApi'
+import { useEffect } from 'react/cjs/react.production.min'
 
 function CreateAccount() {
     const [username, setUsername] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
+
+    useEffect(() => {
+        const jwt = sessionStorage.getItem('jwt')
+        if (jwt) {
+            router.push('/')
+            return
+        }
+    }, [])
 
     const onCreateAccount = () => {
         GlobalApi.registerUser(username, email, password).then(resp => {
