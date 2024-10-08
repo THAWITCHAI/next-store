@@ -8,7 +8,7 @@ import ProductList from "./_component/ProductList";
 
 export default async function Home() {
 
-  const sliderList =await GlobalApi.getSliders();
+  const sliderList = await GlobalApi.getSliders();
 
   const productList =await GlobalApi.getAllProducts();
 
