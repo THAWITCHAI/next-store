@@ -3,9 +3,9 @@ import { Button } from '@/components/ui/button'
 import { ShoppingBag, ShoppingBasket } from 'lucide-react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
+import { toast } from "sonner"
 import React, { useState, useContext } from 'react'
 import GlobalApi from '../_utils/GlobalApi'
-import { toast } from 'sonner'
 import { UpdateCartContext } from '../_context/UpdateCartContext'
 
 function ProductItemDetail({ product }) {
