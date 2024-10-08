@@ -5,8 +5,7 @@ import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { React, useState } from "react";
-import { useEffect } from "react/cjs/react.production.min";
+import { React, useState,useEffect } from "react";
 import { toast } from "sonner";
 
 export default function Singln() {

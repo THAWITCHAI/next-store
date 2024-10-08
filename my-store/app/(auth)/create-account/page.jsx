@@ -1,11 +1,10 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Input } from "@/components/ui/input"
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
 import GlobalApi from '@/app/_utils/GlobalApi'
-import { useEffect } from 'react/cjs/react.production.min'
 
 function CreateAccount() {
     const [username, setUsername] = useState();

@@ -4,13 +4,12 @@ import React from 'react'
 
  async function ProdutCatgory ({params}){
 
-    const prodctList = await GlobalApi.getProductByCategory(params?.categoryName)
+    const productList = await GlobalApi.getProductByCategory(params?.categoryName)
     // const id = params.categoryName
-
     return (
     
         <div className='p-5 md:p-10'>
-            <ProdutCatgory productList= {prodctList}/>
+            <ProductList productList= {productList}/>
         </div> 
     ) 
 }
