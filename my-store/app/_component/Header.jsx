@@ -129,7 +129,7 @@ function Header() {
             <h2 className='flex gap-2 items-center text-lg'>
               <ShoppingBag className='h-7 w-7' />
               <span className='bg-primary text-white px-2 rounded-full'>
-                {totalCartItems}
+                {totalCartItem}
               </span>
             </h2>
           </SheetTrigger>
